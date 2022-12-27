@@ -121,11 +121,14 @@ public class PracticeService {
 				{"4", "  ", "  ", "  ", "  ", "  "},
 		};
 		
+		try {
+			
 		System.out.print("행 인덱스 입력 : ");
 		int row = sc.nextInt();
 		
 		System.out.print("열 인덱스 입력 : ");
 		int col = sc.nextInt();
+		
 		
 		for(int x = 0; x < arr.length; x++) {
 			for(int y = 0; y < arr[x].length; y++) {
@@ -138,6 +141,9 @@ public class PracticeService {
 			System.out.println();
 		}
 		
+		} catch(Exception e) {
+			System.out.println("잘못된 입력을 하셨습니다.");
+		}
 		
 		
 		
